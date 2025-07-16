@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		1C13E5CE1C017BAC9F95BF8A /* Pods_splash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66DA58A11E9374D0126D8C6D /* Pods_splash.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		7812F68C2E2771A20088CCD1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,9 +28,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D55381CF74CB02DEA69D5B2 /* Pods-splash.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-splash.debug.xcconfig"; path = "Target Support Files/Pods-splash/Pods-splash.debug.xcconfig"; sourceTree = "<group>"; };
+		66DA58A11E9374D0126D8C6D /* Pods_splash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_splash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7812F6752E27719F0088CCD1 /* splash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = splash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7812F68B2E2771A20088CCD1 /* splashTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = splashTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7812F6952E2771A20088CCD1 /* splashUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = splashUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8582035F2FC555EF2621B083 /* Pods-splash.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-splash.release.xcconfig"; path = "Target Support Files/Pods-splash/Pods-splash.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -48,16 +55,6 @@
 			path = splash;
 			sourceTree = "<group>";
 		};
-		7812F68E2E2771A20088CCD1 /* splashTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = splashTests;
-			sourceTree = "<group>";
-		};
-		7812F6982E2771A20088CCD1 /* splashUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = splashUITests;
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C13E5CE1C017BAC9F95BF8A /* Pods_splash.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,13 +83,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14E0C80172CEE8367C1E09ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				66DA58A11E9374D0126D8C6D /* Pods_splash.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		28BE1CC87465684492553F81 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0D55381CF74CB02DEA69D5B2 /* Pods-splash.debug.xcconfig */,
+				8582035F2FC555EF2621B083 /* Pods-splash.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		7812F66C2E27719F0088CCD1 = {
 			isa = PBXGroup;
 			children = (
 				7812F6772E27719F0088CCD1 /* splash */,
-				7812F68E2E2771A20088CCD1 /* splashTests */,
-				7812F6982E2771A20088CCD1 /* splashUITests */,
 				7812F6762E27719F0088CCD1 /* Products */,
+				28BE1CC87465684492553F81 /* Pods */,
+				14E0C80172CEE8367C1E09ED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,9 +127,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7812F69E2E2771A20088CCD1 /* Build configuration list for PBXNativeTarget "splash" */;
 			buildPhases = (
+				04DA51620BCCB40C9069DB19 /* [CP] Check Pods Manifest.lock */,
 				7812F6712E27719F0088CCD1 /* Sources */,
 				7812F6722E27719F0088CCD1 /* Frameworks */,
 				7812F6732E27719F0088CCD1 /* Resources */,
+				4D501B6A019CA1E957B459AE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,8 +141,6 @@
 				7812F6772E27719F0088CCD1 /* splash */,
 			);
 			name = splash;
-			packageProductDependencies = (
-			);
 			productName = splash;
 			productReference = 7812F6752E27719F0088CCD1 /* splash.app */;
 			productType = "com.apple.product-type.application";
@@ -143,12 +158,7 @@
 			dependencies = (
 				7812F68D2E2771A20088CCD1 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				7812F68E2E2771A20088CCD1 /* splashTests */,
-			);
 			name = splashTests;
-			packageProductDependencies = (
-			);
 			productName = splashTests;
 			productReference = 7812F68B2E2771A20088CCD1 /* splashTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -166,12 +176,7 @@
 			dependencies = (
 				7812F6972E2771A20088CCD1 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				7812F6982E2771A20088CCD1 /* splashUITests */,
-			);
 			name = splashUITests;
-			packageProductDependencies = (
-			);
 			productName = splashUITests;
 			productReference = 7812F6952E2771A20088CCD1 /* splashUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -244,6 +249,52 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		04DA51620BCCB40C9069DB19 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-splash-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4D501B6A019CA1E957B459AE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-splash/Pods-splash-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-splash/Pods-splash-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-splash/Pods-splash-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7812F6712E27719F0088CCD1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -284,6 +335,7 @@
 /* Begin XCBuildConfiguration section */
 		7812F69F2E2771A20088CCD1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D55381CF74CB02DEA69D5B2 /* Pods-splash.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -311,6 +363,7 @@
 		};
 		7812F6A02E2771A20088CCD1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8582035F2FC555EF2621B083 /* Pods-splash.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -373,7 +426,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -436,7 +489,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
